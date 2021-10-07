@@ -1,8 +1,8 @@
 s = 1
 while s:
-    a = int(input("Введите число a: "))
-    b = int(input("Введите число b: "))
-    c = input("Выберите знак(+/-/*/:)")
+    a = int(input("Input number a: "))
+    b = int(input("Input number b: "))
+    c = input("Choose an operation (+/-/*/:)")
     if c == "+":
         print(a, c, b, "=", a+b)
     elif c == "-":
@@ -12,13 +12,13 @@ while s:
     elif c == ":":
         print(a, c, b, "=", a/b)
     else:
-        print("Неизвестный знак")
+        print("Undefined operation")
     while 1:
-        r = input("Хотите продолжить пользоваться программой(y/n)? ")
+        r = input("One more loop(y/n)? ")
         if r == "y":
             break
         elif r == "n":
             s = 0
             break
         else:
-            print("Неправильный ввод")
+            print("Wrong action")
